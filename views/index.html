@@ -4,49 +4,52 @@
     <title>Google Calendar API</title>
     <meta charset="utf-8" />
   </head>
+
   <body style="display: flex; flex-direction: column; align-items: center">
-    <p style="font-size: x-large; font-weight: bold">Google Calendar API</p>
+    <div style="min-height: 400px; min-width: 400px;">
+      <p style="font-size: x-large; font-weight: bold">Google Calendar API</p>
 
-    <!--Add buttons to initiate auth sequence and sign out-->
-    <button
-      id="authorize_button"
-      style="
-        display: none;
-        padding: 7px 12px;
-        border-radius: 5px;
-        background-color: rgb(78 181 98);
-        font-weight: bold;
-        border: 0px;
-        color: white;
-      "
-    >
-      Authorize
-    </button>
-    <button
-      id="signout_button"
-      style="
-        display: none;
-        padding: 7px 12px;
-        border-radius: 5px;
-        background-color: rgb(209 72 72);
-        font-weight: bold;
-        border: 0;
-        color: white;
-      "
-    >
-      Sign Out
-    </button>
-
-    <div
-      id="content"
-      style="
-        justify-content: space-between;
-        white-space: pre-wrap;
-        display: flex;
-        flex-wrap: wrap;
-        width: 90%;
-      "
-    ></div>
+      <!--Add buttons to initiate auth sequence and sign out-->
+      <button
+        id="authorize_button"
+        style="
+          display: none;
+          padding: 7px 12px;
+          border-radius: 5px;
+          background-color: rgb(78 181 98);
+          font-weight: bold;
+          border: 0px;
+          color: white;
+        "
+      >
+        Authorize
+      </button>
+      <button
+        id="signout_button"
+        style="
+          display: none;
+          padding: 7px 12px;
+          border-radius: 5px;
+          background-color: rgb(209 72 72);
+          font-weight: bold;
+          border: 0;
+          color: white;
+        "
+      >
+        Sign Out
+      </button>
+  
+      <div
+        id="content"
+        style="
+          justify-content: space-between;
+          white-space: pre-wrap;
+          display: flex;
+          flex-wrap: wrap;
+          width: 90%;
+        "
+      ></div>
+    </div>
 
     <script type="text/javascript">
       // Client ID and API key from the Developer Console
@@ -228,4 +231,5 @@
       onreadystatechange="if (this.readyState === 'complete') this.onload()"
     ></script>
   </body>
+
 </html>
